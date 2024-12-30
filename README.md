@@ -10,3 +10,5 @@ umarkhan$ ffuf -s -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5
 
 Commands to get VHOST 
 umarkhan:$ ffuf -s -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ -u http://academy.htb:31145/ -H 'Host: FUZZ.academy.htb' -ac :- ALWAYS use this mate!! 
+
+
