@@ -8,3 +8,11 @@ umarkhan$ ffuf -s -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5
 
 Commands to get VHOST 
 umarkhan:$ ffuf -s -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ -u http://academy.htb:31145/ -H 'Host: FUZZ.academy.htb' -ac :- ALWAYS use this mate!! 
+
+
+Command to check what extension is allowed
+umarkhan$ ffuf -s -w /opt/useful/seclists/Discovery/Web-Content/web-extensions.txt:FUZZ -u http://test.academy.htb:34139/indexFUZZ
+
+
+
+ffuf -wffuf -w /opt/useful/SecLists/Usernames/Names/names.txt:FUZZ -u http://faculty.academy.htb:STMPO/courses/linux-security.php7 -X POST -d 'username=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -t 100
